@@ -1,0 +1,94 @@
+<style>
+    html {
+        height: 100;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100%;
+        position: relative;
+        margin: 0;
+        padding-bottom: 6.47;
+        box-sizing: inherit;
+
+    }
+
+    header {
+        width: 97%;
+    }
+
+    label {
+        color: white;
+        margin-top: 5px;
+        font-weight: 700;
+        font-size: large;;
+    }
+
+    input {
+        background-color: #2d4111;
+        border: none;
+        color: white;
+        width: 100%;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        outline: none;
+        border-bottom: 1px solid #f7f7f8;
+    }
+
+    input:focus {
+        border-bottom: 1px solid #f58720;
+    }
+
+    ::placeholder {
+        color: #e5e5e887;
+    }
+    .submit{
+        background-color: #f58720;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-weight: 500;
+    }
+</style>
+<div style="min-height: 100%; background-color: #2d4111;">
+    <div data-include="components/header.html"></div>
+
+    <main style="background-color: #2d4111; width: 80%;">
+        <!-- <h3 class="dm-serif text-center display-5" style="color: white;">Contact</h3> -->
+        <br />
+        <div class="row">
+            <div class="col-sm-6" style="padding: 20px;">
+                <form action="Contact.php" method="POST" >
+                    <h4 class="text-light dm-serif display-7">Submit Email Request:</h4>
+                    <label for="name">Full Name</label>
+                    <br />
+                    <input class="quicksand" id="name" name="name" type="text" placeholder="John Doe" />
+                    <br />
+                    <label for="email">Email</label>
+                    <br />
+                    <input class="quicksand" id="email" name="email" type="email" placeholder="example@example.com" />
+                    <br />
+                    <label for="phone">Phone Number</label>
+                    <br />
+                    <input class="quicksand" id="phone" name="phone" type="text" placeholder="123-456-7890" />
+                    <br /><br/>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+                <p class="quicksand text-light">Submit this form and we will reach out to you as soon as possible. <br/><br/>Thank you,<br/>Mitchell's Lawn care</p>
+            </div>
+            <div class="col-sm-6" style="background-color: #192409; padding: 20px;">
+                <h4 class="text-light dm-serif display-7">Contact Us:</h4>
+                <p class="text-light quicksand"> If you are not contacted in a timely manner, feel free to contact us at any time!<br/><br/>Thank you,<br/>Mitchell's Lawn care</p>
+                <p class="text-light quicksand"><img src="images/9035117_person_icon.png" width="20" style="margin-right: 5px; color: white;"> Cyrus Mitchell</p>
+                <p class="text-light quicksand"><img src="images/8684877_email_mail_envelope_message_letter_icon.png" width="20" style="margin-right: 5px; color: white;"> Mitchellslawncare@gmx.com</p>
+                <p class="text-light quicksand"><img src="images/8665646_phone_communication_icon.png" width="20" style="margin-right: 5px; color: white;"> 828-726-9158</p>
+                
+            </div>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+</div>
+<script src="scripts/nav.js"></script>
+<script src="scripts/htmlinclude.js"></script>
+<script>document.title = 'Mitchell\'s || Home'</script>

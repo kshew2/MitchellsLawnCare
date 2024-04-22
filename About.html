@@ -1,0 +1,101 @@
+<style>
+    html {
+      height: 100;
+      box-sizing: border-box;
+    }
+  
+    body {
+      min-height: 100%;
+      position: relative;
+      margin: 0;
+      padding-bottom: 6.47;
+      box-sizing: inherit;
+  
+    }
+  
+    header {
+      width: 97%;
+    }
+  
+    .page {
+      background-color: #2d4111;
+      width: 97%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lis{
+      color: black;
+      font-size: large;
+      font-weight: 600;
+    }
+    p{
+      color: white;
+      font-size: x-large;
+      
+    }
+    .p1{
+      line-height: 1.9;
+    }
+    .p2{
+      line-height: 1.8;
+    }
+    .w{
+        font-size: xx-large;
+    }
+    .para2{
+      width: 92%;
+    }
+    .cyrus{
+      width: 90%;
+    }
+    @media all and (max-width: 767px) {
+      .para2{
+      width: 100%;
+    }
+    .cyrus{
+      width: 100%;
+    }
+    .br{
+      display: none;
+    }
+    .p1{
+      line-height: 1.5;
+    }
+    .p2{
+      line-height: 1.5;
+    }
+    }
+  </style>
+  <div style="min-height: 100%; background-color: #2d4111;">
+    <div data-include="components/header.html"></div>
+  <br />
+    <main style="background-color: #2d4111; width: 80%;">
+      <div>
+        <h3 class="dm-serif text-center display-5" style="color: white;">About Mitchell's Lawn Care</h3>
+        <br /><br class="br"/><br class="br"/>
+        <div class="row">
+            <div id="block1" class="col-sm-6">
+                <img class="cyrus" src="images/Cyrus.jpg"/>
+            </div>
+            <div id="block2"  class="col-sm-6">
+                <p class="libre-baskerville-regular p1"><span class="dm-serif w">W</span>elcome to Mitchell's Landscaping and Lawn Care! We're not just another lawn care company – we're a family-owned business dedicated to creating lush, vibrant outdoor spaces for families just like yours. With years of experience in the lawn care industry, we've honed our skills and developed strategies that ensure your lawn stays healthy and beautiful year-round. From mowing and trimming to fertilizing and weed control, we offer a comprehensive range of services tailored to meet your specific needs.</p>
+            </div>
+        </div>
+        <br /><br /><br />
+        <div class="row">
+            <div id="block3" class="col-sm-6">
+              <div class="para2" >
+                <p class="libre-baskerville-regular p2">What truly sets us apart is our commitment to customer satisfaction. We believe in building lasting relationships with our clients, which is why we always go above and beyond to exceed your expectations. Whether you have questions about lawn care techniques or need advice on how to maintain your lawn between visits, we're here to help every step of the way.</p>
+              </div>
+              </div>
+            <div id="block4" class="col-sm-6">
+                <img style="width: 100%;" src="images/family.jpg"/>
+            </div>
+        </div>
+      </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+  </div>
+  <script src="scripts/nav.js"></script>
+  <script src="scripts/htmlinclude.js"></script>
+  <script>document.title = 'Mitchell\'s || Home'</script>
