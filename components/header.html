@@ -35,16 +35,16 @@
             
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
               <li class="nav-item">
-                <a class="nav-link active home" id="active" aria-current="page" href="/Index.html">Home</a>
+                <a class="nav-link home" id="home" aria-current="page" href="/Index.html">Home</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link "  href="/Testimony.html">Testimonials</a>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link service" href="/Gallery.html">Services</a>
+                <a class="nav-link service" id="service" href="/Gallery.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link about"  href="/About.html">About</a>
+                <a class="nav-link about" id="about" href="/About.html">About</a>
               </li>
               <!-- <li class="nav-item" style="margin-left: 20px;">
                 <a class="nav-link" href="/Testimony.html">Testimonials</a>
@@ -64,4 +64,17 @@
         </div></div>
 
       </nav>
+      <!-- <script>
+        const url = window.location.href.toString();
+        alert(url);
+        if(url == 'http://127.0.0.1:5500/Contact.html'){
+        const home = document.getElementsByClassName("home");
+        home.removeAttribute('id');
+        home.classList.remove('active');
+        const contact = document.getElementsByClassName("contact");
+        contact.classList.add('active');
+        contact.setAttribute('contact', 'active');
+        }
+      </script> -->
+
 </header>

@@ -50,6 +50,16 @@
         border: none;
         font-weight: 500;
     }
+   /* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #2d4111 inset !important;
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: white !important;
+}
 </style>
 <div style="min-height: 100%; background-color: #2d4111;">
     <div data-include="components/header.html"></div>
@@ -89,6 +99,20 @@
     </main>
     <div data-include="components/footer.html"></div>
 </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="Contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="scripts/nav.js"></script>
 <script src="scripts/htmlinclude.js"></script>
 <script>document.title = 'Mitchell\'s || Home'</script>
+<!-- <script>
+document.getElementsByClassName("home");
+document.getElementsByClassName("home").removeAttribute('id');
+document.getElementsByClassName("home").classList.remove('active');
+document.getElementsByClassName("contact");
+document.getElementsByClassName("contact").classList.add('active');
+document.getElementsByClassName("contact").setAttribute('contact', 'active');
+</script> -->
+<!-- <script>
+    alert('Hello');
+</script> -->
