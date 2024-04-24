@@ -12,6 +12,9 @@ body {
     box-sizing: inherit;
 
 }
+.error .item{
+border: 1px solid red;
+}
 
 .one {
     /* padding-bottom: 500px;

@@ -61,6 +61,12 @@ input:-webkit-autofill{
     -webkit-text-fill-color: white !important;
 }
 </style>
+<!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script> -->
 <div style="min-height: 100%; background-color: #2d4111;">
     <div data-include="components/header.html"></div>
 
@@ -69,20 +75,22 @@ input:-webkit-autofill{
         <br />
         <div class="row">
             <div class="col-sm-6" style="padding: 20px;">
-                <form action="Contact.php" method="POST" >
+                <form action="#" method="POST" >
                     <h4 class="text-light dm-serif display-7">Submit Email Request:</h4>
                     <label for="name">Full Name</label>
                     <br />
-                    <input class="quicksand" id="name" name="name" type="text" placeholder="John Doe" />
+                    <input class="item quicksand" id="name" name="name" type="text" placeholder="John Doe" required/>
                     <br />
                     <label for="email">Email</label>
                     <br />
-                    <input class="quicksand" id="email" name="email" type="email" placeholder="example@example.com" />
+                    <input class="item quicksand" id="email" name="email" type="email" placeholder="example@example.com" required/>
                     <br />
                     <label for="phone">Phone Number</label>
                     <br />
-                    <input class="quicksand" id="phone" name="phone" type="text" placeholder="123-456-7890" />
+                    <input class="item quicksand" id="phone" name="phone" type="text" placeholder="123-456-7890" required/>
                     <br /><br/>
+                    <div class="g-recaptcha" data-sitekey="6Ld5JcYpAAAAAIZOCGBNBbSXbvkmQJ-VwOlzDsFj"></div>
+                    <!-- <span id="captcha" style="color:red" /></span> -->
                     <input type="submit" value="Submit" class="submit">
                 </form>
                 <p class="quicksand text-light">Submit this form and we will reach out to you as soon as possible. <br/><br/>Thank you,<br/>Mitchell's Lawn care</p>
