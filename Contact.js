@@ -8,7 +8,7 @@ function sendEmail() {
     Email.send({
         SecureToken: "98d074a3-c922-434b-94e8-13801ed4a900",
         To : 'khalilshew1030@gmail.com',
-        From : "No-Reply@MitchellsLawnCare.netlify.app",
+        From : "Mitchellslawncare@gmx.com",
         Subject : "New Contact Submission",
         Body : bodyMessage
     }).then(
