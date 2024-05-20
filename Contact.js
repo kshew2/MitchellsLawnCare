@@ -7,7 +7,7 @@ function sendEmail() {
     const bodyMessage = `<b>Full Name:</b> ${fullName.value}<br> <b>Email:</b> ${email.value}<br> <b>Phone Number:</b> ${phone.value}`;
     Email.send({
         SecureToken: "98d074a3-c922-434b-94e8-13801ed4a900",
-        To : 'khalilshew1@gmail.com',
+        To : 'khalilshew1030@gmail.com',
         From : "No-Reply@MitchellsLawnCare.netlify.app",
         Subject : "New Contact Submission",
         Body : bodyMessage
